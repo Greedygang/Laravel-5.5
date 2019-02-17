@@ -1,0 +1,22 @@
+version: "0.1"
+services: 
+  nginx_server: 
+    build: ./build/nginx
+    container_name: nginx
+    tty: true
+    ports: 
+      - "10010:80"
+    volumes:
+      - ./build/nginx/conf:/etc/nginx/conf.d
+      - ./logs/nginx:/data/logs/nginx
+      - ./public:/home/q/server/blog/public
+    links:
+      - php_server
+
+  php_server:
+    build: ./build/php
+    container_name: php
+    volumes:
+      - .:/home/q/server/blog
+
+      
