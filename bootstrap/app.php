@@ -27,6 +27,7 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
+// 绑定http内核对象，加载配置文件
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
@@ -52,5 +53,5 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
-
+// dd($app);
 return $app;
