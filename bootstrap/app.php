@@ -11,6 +11,7 @@
 |
 */
 // 创建app对象，作为IOC容器
+// realpath：项目根目录
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );

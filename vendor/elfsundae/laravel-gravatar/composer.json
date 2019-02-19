@@ -1,0 +1,31 @@
+{
+    "name": "elfsundae/laravel-gravatar",
+    "type": "library",
+    "description": "The easiest way to generate Gravatar avatar URL.",
+    "keywords": ["laravel", "gravatar", "helper"],
+    "homepage": "https://github.com/ElfSundae/laravel-gravatar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elf Sundae",
+            "email": "elf.sundae@gmail.com",
+            "homepage": "https://0x123.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7|~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
